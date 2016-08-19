@@ -26,11 +26,11 @@ function pingPongChange (numbers) {
 $(document).ready(function(){
   $('form').submit(function(event) {
     event.preventDefault();
-    $('li').remove();
+    $('li#resultList').remove();
     var userNumber = $('#userNumber').val();
     pingPongChange(listNumbers(userNumber));
     numbers.forEach(function(numbers) {
-    $('#results').append('<li>' + numbers + '</li>');
+    $('#results').append('<li id=resultList>' + numbers + '</li>');
     });
   });
 });

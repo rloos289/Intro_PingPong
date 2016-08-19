@@ -1,0 +1,21 @@
+#top {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #F3DEB5;
+}
+
+#sidebar {
+  background-color: #90BB90;
+  height: 36em;
+}
+
+#main{
+  background-color: #E6E6E6;
+  height: 36em;
+}
+
+.subheading {
+  font-weight: bold;
+  color: #F3DEB5;
+}
