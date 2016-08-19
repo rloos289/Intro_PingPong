@@ -5,8 +5,21 @@ function listNumbers(input) {
   for (i = 1; i < input; i++) {
     numbers.push(i);
   }
-  console.log(numbers);
 }
+
+function pingPongChange (numbers) {
+  for (i = 1; i < numbers.length; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      numbers.splice(i-1,1, 'pingpong');
+    } else if (i % 3 === 0) {
+      numbers.splice([i-1],1, 'ping');
+    } else if (i % 5 === 0) {
+      numbers.splice([i-1],1, 'pong');
+    }
+  console.log(numbers);
+  }
+}
+
 //<!-- Front End  -->
 $(document).ready(function(){
   $('form').submit(function(event) {

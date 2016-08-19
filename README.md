@@ -16,11 +16,8 @@ _A template website that has confirmed functional Javascript, CSS, Bootstrap (v3
 form prevents user from entering non-numeric characters
   * Example Input: 'apple'
   * Example Output: system does not register input
-when user inputs number, system generates a list of all preceding numbers including the inputted one
+when user inputs number, system generates a list of all preceding numbers including the inputted one, and pushes them to an array
   * Example Input: 5
-  * Example Output: 1,2,3,4,5
-list of numbers is split into an array
-  * Example Input: 1,2,3,4,5
   * Example Output: [1,2,3,4,5]
 loop goes through each number if it is divisible by 3 replaces it with 'ping'
   * Example Input: [1,2,3,4,5]
