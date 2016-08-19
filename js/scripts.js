@@ -1,12 +1,14 @@
 //<!-- Back End -->
 var numbers = [];
 
+//generates list of numbers and pushes it to empty array
 function listNumbers(input) {
   for (i = 1; i < input; i++) {
     numbers.push(i);
-  }
+  } return numbers;
 }
 
+//translates certain numbers into ping, pong, and pingpong
 function pingPongChange (numbers) {
   for (i = 1; i < numbers.length; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
@@ -16,7 +18,6 @@ function pingPongChange (numbers) {
     } else if (i % 5 === 0) {
       numbers.splice([i-1],1, 'pong');
     }
-  console.log(numbers);
   }
 }
 
@@ -24,7 +25,12 @@ function pingPongChange (numbers) {
 $(document).ready(function(){
   $('form').submit(function(event) {
     event.preventDefault();
+    numbers = [];
+    $('li').remove();
     var userNumber = $('#userNumber').val();
-    listNumbers(userNumber);
+    pingPongChange(listNumbers(userNumber));
+    numbers.forEach(function(numbers) {
+    $('#results').append('<li>' + numbers + '</li>');
+    });
   });
 });
