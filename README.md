@@ -28,12 +28,13 @@ same loop goes through each number if it is divisible by 5 replaces it with 'pon
 same loop goes through each number and if both previous conditions were true replaces it with 'ping-pong'
   * Example Input: [10,11,12,13,14,15]
   * Example Output: [pong,11,ping,13,14,ping-pong]
-combines array back into string with spaces between numbers and words
-  * Example Input: [pong,11,ping,13,14,ping-pong]
-  * Example Output: pong 11 ping 13 14 ping-pong
 prints string to empty ul tag on the page
   * Example Input: pong 11 ping 13 14 ping-pong
-  * Example Output: *pong *11 *ping *13 *14 *ping-pong
+  * Example Output: pong *11 *ping *13 *14 *ping-pong*
+when user enters a different number, page generates a new list
+  * Example Input: (first input 45), now input 5
+  * Example Output: 1,2,ping,4,pong
+
 
 ## GitHub link
 https://github.com/rloos289/PingPong
