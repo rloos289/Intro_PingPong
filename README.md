@@ -37,8 +37,7 @@ _A template website that has confirmed functional Javascript, CSS, Bootstrap (v3
 
 
 ## GitHub link
-https://github.com/rloos289/PingPong
-
+https://rloos289.github.io/PingPong/
 
 ## Licensing
 
