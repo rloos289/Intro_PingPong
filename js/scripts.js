@@ -3,6 +3,7 @@ var numbers = [];
 
 //generates list of numbers and pushes it to empty array
 function listNumbers(input) {
+  numbers = [];
   for (i = 1; i < input; i++) {
     numbers.push(i);
   } return numbers;
@@ -25,7 +26,6 @@ function pingPongChange (numbers) {
 $(document).ready(function(){
   $('form').submit(function(event) {
     event.preventDefault();
-    numbers = [];
     $('li').remove();
     var userNumber = $('#userNumber').val();
     pingPongChange(listNumbers(userNumber));
