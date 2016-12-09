@@ -1,10 +1,10 @@
-# _Template_
+# _Ping Pong_
 
 #### By _Ryan Loos_
 
 ## Description
 
-_A template website that has confirmed functional Javascript, CSS, Bootstrap (v3.3.7), and jQuery(v3.1.0)_
+_Solves the classic PingPong Problem_
 
 ## Setup/Installation Requirements
 
